@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.ensemble import IsolationForest
+import matplotlib.pyplot as plt
 
 # ---------------------------------------------------------
 # Delivery Intelligence Demo
@@ -65,3 +66,46 @@ print(
         ]
     ].to_string(index=False)
 )
+# --------------------------------------------------
+# Visualize detected delivery anomalies
+# --------------------------------------------------
+
+plt.figure(figsize=(10, 6))
+
+normal = df[df["anomaly"] == 1]
+anomalies = df[df["anomaly"] == -1]
+
+plt.scatter(
+    normal["planned_delivery_days"],
+    normal["delay_days"],
+    color="steelblue",
+    label="Normal deliveries",
+    alpha=0.7
+)
+
+plt.scatter(
+    anomalies["planned_delivery_days"],
+    anomalies["delay_days"],
+    color="red",
+    label="Detected anomalies",
+    s=80
+)
+
+plt.axhline(
+    y=0,
+    color="gray",
+    linestyle="--",
+    linewidth=1
+)
+
+plt.xlabel("Planned Delivery Days")
+plt.ylabel("Delivery Delay (Days)")
+plt.title("Delivery Intelligence - Anomaly Detection")
+
+plt.legend()
+plt.grid(alpha=0.2)
+plt.tight_layout()
+
+plt.savefig("delivery_anomalies.png", dpi=150)
+
+plt.show()
