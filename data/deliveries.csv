@@ -1,0 +1,13 @@
+order_id,customer,country,order_date,planned_delivery_date,distance_km,order_quantity,carrier,transport_mode,priority,previous_delays,weather_risk,actual_delay_days
+ORD001,Customer_A,Spain,2026-09-01,2026-09-05,320,120,Carrier_A,Road,Normal,0,0,0
+ORD002,Customer_B,France,2026-09-02,2026-09-07,850,250,Carrier_B,Road,High,1,0,2
+ORD003,Customer_C,Germany,2026-09-03,2026-09-08,1200,180,Carrier_A,Road,Normal,0,1,1
+ORD004,Customer_D,Italy,2026-09-04,2026-09-10,1450,300,Carrier_C,Road,High,2,1,4
+ORD005,Customer_E,Spain,2026-09-05,2026-09-08,180,90,Carrier_A,Road,Normal,0,0,0
+ORD006,Customer_F,France,2026-09-06,2026-09-11,920,400,Carrier_B,Road,High,3,1,5
+ORD007,Customer_G,Germany,2026-09-07,2026-09-12,1100,220,Carrier_C,Road,Normal,1,0,1
+ORD008,Customer_H,Italy,2026-09-08,2026-09-14,1550,350,Carrier_B,Road,High,2,1,6
+ORD009,Customer_I,Spain,2026-09-09,2026-09-12,250,140,Carrier_A,Road,Normal,0,0,0
+ORD010,Customer_J,France,2026-09-10,2026-09-15,780,270,Carrier_C,Road,High,1,1,3
+ORD011,Customer_K,Germany,2026-09-11,2026-09-16,1050,190,Carrier_A,Road,Normal,0,0,0
+ORD012,Customer_L,Italy,2026-09-12,2026-09-18,1620,420,Carrier_B,Road,High,3,1,7
