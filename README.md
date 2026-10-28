@@ -30,6 +30,15 @@ Scope
 This is intentionally a small proof of concept.
 
 The dataset is synthetic and the example is designed to demonstrate the approach rather than represent a production solution.
+Example output
+The following visualization shows delivery patterns detected by the model.
+
+Blue points represent normal delivery behavior, while red points represent unusual patterns identified by the anomaly detection model.
+
+![Delivery anomaly detection](delivery_anomalies
+
+
+
 
 
 
